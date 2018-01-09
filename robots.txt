@@ -1,2 +1,3 @@
+# robotstxt.org/
+
 User-agent: *
-Sitemap: http://www.panxw.com/atom.xml
