@@ -1,4 +1,4 @@
 ---
 layout: category
-category: variety_store
+category: kit
 ---

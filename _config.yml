@@ -10,10 +10,10 @@ name:
 url:
 domain:
 all_categories: [
-["c&cpp", "c&cpp","/posts/c&cpp.html"], 
+["c", "c","/posts/c.html"], 
 ["python", "python","/posts/python.html"],
-["variety_store", "杂货铺","/posts/variety_store.html"], 
-["reading_notes", "札记","/posts/reading_notes.html"],
+["kit", "杂货铺","/posts/kit.html"], 
+["note", "札记","/posts/note.html"],
 ["about", "关于","/about.html"]
 ]
 
@@ -25,5 +25,5 @@ collections:
   docs:
     output: true
 
-gems:
+plugins:
  - jekyll-paginate

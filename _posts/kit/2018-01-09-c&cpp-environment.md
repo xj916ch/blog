@@ -1,8 +1,8 @@
 ---
 layout: post
-category: "variety_store"
+category: "kit"
 title:  "C&CPP编译环境"
-tags: [c/cpp]
+tags: [c]
 ---
 ### VS Code
 

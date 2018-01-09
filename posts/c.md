@@ -1,4 +1,4 @@
 ---
 layout: category
-category: reading_notes
+category: c
 ---
