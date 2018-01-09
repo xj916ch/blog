@@ -10,10 +10,10 @@ name:
 url:
 domain:
 all_categories: [
-["c_cpp", "C&CPP","/posts/c_cpp.html"], 
-["python", "Python","/posts/python.html"],
-["ironmongery", "五金店","/posts/ironmongery.html"], 
-["read_notes", "札记","/posts/read_notes.html"],
+["c&cpp", "c&cpp","/posts/c&cpp.html"], 
+["python", "python","/posts/python.html"],
+["variety_store", "杂货铺","/posts/variety_store.html"], 
+["reading_notes", "札记","/posts/reading_notes.html"],
 ["about", "关于","/about.html"]
 ]
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-category: "ironmongery"
+category: "variety_store"
 title:  "jekyll + Github Pages设置"
 tags: [jekyll,Github Pages]
 ---

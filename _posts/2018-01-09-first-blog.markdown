@@ -1,15 +1,9 @@
 ---
 layout: post
-category: "ironmongery"
-title:  "人生什么更重要？[测试]"
-tags: [阅读,人生]
+category: "reading_notes"
+title:  "第一篇blog"
+tags:
 ---
-### 哪个更重要？
+### 第一篇属于自己的blog
 
->方向比努力重要，  
->身体比金钱重要，  
->生活比文凭重要，  
->情商比智商重要，  
->能力比知识重要，  
->行动比（愿望）空想重要。 
 

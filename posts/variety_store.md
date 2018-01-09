@@ -1,4 +1,4 @@
 ---
 layout: category
-category: c_cpp
+category: variety_store
 ---
