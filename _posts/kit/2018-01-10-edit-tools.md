@@ -1,8 +1,8 @@
 ---
 layout: post
 category: "kit"
-title:  "程序员编辑器(VS Code/NPP/ST)"
-tags: [Android, Termux]
+title:  "程序员编辑器(VS Code/NPP/ST/SI)"
+tags: [VS Code,NPP]
 ---
 
 ### [VS Code](https://termux.com/)
@@ -146,3 +146,13 @@ D5D52613 C3D12E98 BC49967F 7652EED2
 E36B85CC 84991F19 7575D828 470A92AB 
 —— END LICENSE ——
 ```
+
+- Source Insight
+
+1.显示行号
+
+Options->File Type Options…->Editing Options->勾选Show line numbers
+
+2.选中单词自动高亮
+
+Options->File Type Options…->Editing Options->勾选Highlight references to selected symbol。
