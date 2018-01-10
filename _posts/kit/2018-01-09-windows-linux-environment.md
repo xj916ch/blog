@@ -6,10 +6,14 @@ tags: [Windows,Linux]
 ---
 ### [Git for Windows](http://gitforwindows.org/)
 
+![image](https://github.com/xj916ch/xj916ch.github.io/tree/master/_posts/pictures/kit/windows-linux-environment-installation-tips.png)
+
+
 
 
 
 ### 其他参考
 MSYS2
 
+Cygwin
 
