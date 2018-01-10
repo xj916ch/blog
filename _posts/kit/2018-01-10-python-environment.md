@@ -1,9 +1,12 @@
 ---
 layout: post
 category: "kit"
-title:  "C&CPP编译环境"
-tags: [c]
+title:  "Python运行环境"
+tags: [python]
 ---
+
+
+
 ### VS Code
 1. VS Code配置
 2. VS Code断点调试

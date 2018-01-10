@@ -6,7 +6,7 @@ tags: [Windows,Linux]
 ---
 ### [Git for Windows](http://gitforwindows.org/)
 
-![image](https://github.com/xj916ch/xj916ch.github.io/tree/master/_posts/pictures/kit/windows-linux-environment-installation-tips.png)
+![image](https://github.com/xj916ch/xj916ch.github.io/raw/master/_posts/pictures/kit/windows-linux-environment-installation-tips.png)
 
 
 

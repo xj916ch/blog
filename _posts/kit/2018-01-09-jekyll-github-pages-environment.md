@@ -37,11 +37,22 @@ $jekyll new blog
 $jekyll server
 ```
 
+本地预览
 浏览器打开http://localhost:4000/
+
+或者从http://jekyllthemes.org/里找一个下载过来修改。
+
+
+插入图片：
+可以使用Github当作图床。
+注意raw：
 
 2. 其他注意配置：
 
 timezone: Asia/Shanghai
+
+### Github Pages
+
 
 
 ### 域名绑定
