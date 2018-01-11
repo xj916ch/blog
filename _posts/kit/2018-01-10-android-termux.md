@@ -59,6 +59,8 @@ VOL↑ + D  右
 
 Termux终端中使用ssh访问远程服务器与Linux终端中使用ssh别无二致。但要使用ssh访问Android设备就不同了，Termux终端中sshd服务不支持密码验证，也就是说用户不能期望通过ssh user@server然后输入用户密码的方式从别的终端访问Android设备。Termux终端中sshd只支持密钥验证。
 
+android和服务器主机处于同一个网段网络。
+
 - 手机登录主机：
 
 如主机ssh一样使用：
@@ -82,3 +84,4 @@ Termux终端中使用ssh访问远程服务器与Linux终端中使用ssh别无二
 在termux输入`$ip addr show wlan0`获取ip
 
 其他设备上可通过`ssh username@ip -p port`的方式登录Android设备。
+
