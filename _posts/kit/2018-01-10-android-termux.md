@@ -89,7 +89,7 @@ android和服务器主机处于同一个网段网络。
 
 juicessh的终端更好看，键盘更好用。
 
-juicessh生成公钥，复制到termux下的.ssh/authorized_keys中。
+juicessh生成认证公钥，复制到termux下的.ssh/authorized_keys中。
 
 termux输入sshd打开服务器。
 

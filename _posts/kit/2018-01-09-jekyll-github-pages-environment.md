@@ -17,6 +17,10 @@ tags: [jekyll,Github Pages]
 
 [迁移博客图片者的福音：使用GitHub做免费不限流量图床](http://jingpin.jikexueyuan.com/article/36279.html)
 
+[Hexo在Github中搭建博客系统(7)万网域名解析到Github Pages](http://blog.csdn.net/chwshuang/article/details/52350589)
+
+[GitHub Pages 绑定域名](http://blog.csdn.net/u013282507/article/details/54944395)
+
 ### jekyll安装
 1. 安装[Ruby](https://rubyinstaller.org/downloads/)，记得添加到环境变量。
 2. 安装[RubyGems](https://rubygems.org/pages/download)，下载ZIP文件解压，输入：
@@ -67,3 +71,18 @@ repo setting下找到Github Pages，只能是master branch。
 push前可以使用`jekeyll server`在本地预览验证。
 
 ### 域名绑定
+
+ping xxx.github.io进行查询，得到一个IP地址：
+
+比如从ping指令得到一个IP地址151.101.25.147，将这个IP地址记录下来。
+
+在万网注册一个域名，进入【域名控制台】->【域名解析】->【解析设置】。添加解析设置：
+
+添加一个记录类型为A，主机记录为www，解析线路默认，记录值为151.101.25.147的记录。
+
+添加一个记录类型为A，主机记录为@，解析线路默认，记录值为151.101.25.147的记录。
+
+在xxx.github.io repository中添加一个文件CNAME，加入注册的域名如xxx.com。
+
+设置完成，等待几分钟，在浏览器中输入域名，就可以看到Github上的网站了。
+
