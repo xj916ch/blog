@@ -85,3 +85,14 @@ android和服务器主机处于同一个网段网络。
 
 其他设备上可通过`ssh username@ip -p port`的方式登录Android设备。
 
+- android JuiceSSH连接termux
+
+juicessh的终端更好看，键盘更好用。
+
+juicessh生成公钥，复制到termux下的.ssh/authorized_keys中。
+
+termux输入sshd打开服务器。
+
+juicessh就可以连接使用了。
+
+
