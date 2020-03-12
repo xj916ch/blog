@@ -24,37 +24,43 @@ tags: [jekyll,Github Pages]
 ### jekyll安装
 1. 安装[Ruby](https://rubyinstaller.org/downloads/)，记得添加到环境变量。
 2. 安装[RubyGems](https://rubygems.org/pages/download)，下载ZIP文件解压，输入：
-```
-$cd {unzip-path}
+```shell
+$cd rubygems
 $ruby setup.rb
 ```
-3. 安装jekyll，这里可以更改[Ruby源](https://gems.ruby-china.org/)。
-```
+3. 安装jekyll：
+```shell
+#更改Ruby源
+$gem sources -l
+$gem sources --add https://gems.ruby-china.com/
+
+#安装jekyll及其他软件
 $gem install jekyll
 $gem install jekyll-paginate
+$gem install wdm
 ```
 
 ### jekyll配置使用
 
 - **jekyll使用**
 
-```
+```shell
 $jekyll new blog
-$jekyll server
+$jekyll server --trace
 ```
 
 浏览器打开http://localhost:4000/出现如下图所示，说明安装成功：
 ![image](https://github.com/xj916ch/xj916ch.github.io/raw/master/_posts/pictures/kit/jekyll-github-pages-environment-jekyll-default.png)
 
-或者从http://jekyllthemes.org/里下载一个。
+jekyll主题可以从http://jekyllthemes.org/网站下载。
 
-- **jekyll配置：**
+- **jekyll配置**
 
 1.时区设置
 
 timezone: Asia/Shanghai
 
-2.插入图片：
+2.插入图片
 
 可以使用Github当作图床。
 
