@@ -33,7 +33,8 @@ $ruby setup.rb
 #更改Ruby源
 $gem sources -l
 $gem sources --add https://gems.ruby-china.com/
-
+```
+```shell
 #安装jekyll及其他软件
 $gem install jekyll
 $gem install jekyll-paginate
