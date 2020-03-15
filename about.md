@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "关于：About"
+title: "About: About"
 ---
 Welcome to visit my blog!
 

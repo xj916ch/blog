@@ -10,11 +10,11 @@ name:
 url:
 domain:
 all_categories: [
-["c", "c","/posts/c.html"], 
-["python", "python","/posts/python.html"],
-["kit", "杂货铺","/posts/kit.html"], 
-["note", "札记","/posts/note.html"],
-["about", "关于","/about.html"]
+["Program", "Program","/posts/program.html"],
+["English", "English","/posts/english.html"],
+["Kit", "Kit","/posts/kit.html"],
+["Notes", "Notes","/posts/notes.html"],
+["About", "About","/about.html"]
 ]
 
 paginate: 8
