@@ -32,13 +32,17 @@ $ruby setup.rb
 ```shell
 #更改Ruby源
 $gem sources -l
-$gem sources --add https://gems.ruby-china.com/
+$gem sources -r https://rubygems.org/
+$gem sources -a https://gems.ruby-china.com/
 ```
 ```shell
 #安装jekyll及其他软件
 $gem install jekyll
 $gem install jekyll-paginate
+$gem install tzinfo
 $gem install wdm
+$gem install zoneinfo
+$gem install tzinfo-data
 ```
 
 ### jekyll配置使用
@@ -52,6 +56,14 @@ $jekyll server --trace
 
 浏览器打开http://localhost:4000/出现如下图所示，说明安装成功：
 ![image](https://github.com/xj916ch/xj916ch.github.io/raw/master/_posts/pictures/kit/jekyll-github-pages-environment-jekyll-default.png)
+
+提示"Permission denied -bind(2) for 127.0.0.1:4000 (Errno:EACCES)“时，说的是4000端口被占用。
+
+找到端口占用的PID，删掉即可。
+
+```shell
+>netstat -ano | findstr 4000
+```
 
 jekyll主题可以从http://jekyllthemes.org/网站下载。
 

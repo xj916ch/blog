@@ -1,7 +1,7 @@
 ---
 layout: post
 category: "english"
-title:  "2020-03-15-day2"
+title:  "2020-03-15 recycling"
 tags: [english]
 ---
 less trash
@@ -67,3 +67,77 @@ Nobody ... was ...
 Nobody at the library was studying.
 
 
+
+recycle
+
+recycling
+
+
+
+cans
+
+secretary
+
+
+
+wooden chopstick
+
+It can easily make a hole in the trash bag.
+
+reduce waste
+
+a lot of different things
+
+garbage
+
+trash
+
+separate paper, glass, metal and plastic garbage
+
+recycling bin
+
+soda can
+
+schedule meetings
+
+environment
+
+how is your first day going?
+
+take bottles and cans out of garbage
+
+put things in
+
+Aren`t you just going to throw them away?
+
+order food to take out and eat it at home
+
+make garbage into new things
+
+stink , smelly
+
+dish
+
+many things are made of metal
+
+the old pieces can be used to make more soda cans or bikes.
+
+a little bit more about this point
+
+we need to separate the garbage into groups
+
+seperate the letters into three piles
+
+the best time to start something is today, If you don`t start today, you might never do it.
+
+So what is something that you want to start to do
+
+It`s  good to have you at the station.
+
+the environment is made of a lot of things.
+
+you should exercise more.
+
+remember to do something 记得做某事
+
+remember doing something 已经做过某事
