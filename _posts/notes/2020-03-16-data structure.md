@@ -77,11 +77,9 @@ tags: [data structure]
 
 ## 单链表
 
+数据域 指针域
 
-
-
-
-
+节点（Node）
 
 
 
