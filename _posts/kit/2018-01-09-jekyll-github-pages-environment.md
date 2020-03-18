@@ -55,7 +55,7 @@ $jekyll server --trace
 ```
 
 浏览器打开http://localhost:4000/出现如下图所示，说明安装成功：
-![image](https://github.com/xj916ch/xj916ch.github.io/raw/master/_posts/pictures/kit/jekyll-github-pages-environment-jekyll-default.png)
+![image](https://github.com/xj916ch/xj916ch.github.io/raw/master/_posts/kit/pictures/jekyll-github-pages-environment-jekyll-default.png)
 
 提示"Permission denied -bind(2) for 127.0.0.1:4000 (Errno:EACCES)“时，说的是4000端口被占用。
 
