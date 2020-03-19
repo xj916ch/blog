@@ -83,6 +83,20 @@ tags: [data structure]
 
 
 
+头插法
+
+![](C:\Users\jian.xin\Desktop\github\blog\_posts\notes\pictures\20200319listinsert_h.png)
+
+
+
+
+
+尾插法
+
+![](C:\Users\jian.xin\Desktop\github\blog\_posts\notes\pictures\20200319listinsert_t.png)
+
+
+
 
 
 
