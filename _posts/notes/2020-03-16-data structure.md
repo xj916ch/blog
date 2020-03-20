@@ -83,9 +83,7 @@ tags: [data structure]
 
 
 
-头插法
-
-![](https://github.com/xj916ch/xj916ch.github.io/raw/master/_posts/notes/pictures/20200319listinsert_h.png)
+头插法![](https://raw.githubusercontent.com/xj916ch/xj916ch.github.io/master/res/20200319listinsert_h.png)
 
 
 
@@ -93,7 +91,7 @@ tags: [data structure]
 
 尾插法
 
-![](https://github.com/xj916ch/xj916ch.github.io/raw/master/_posts/notes/pictures/20200319listinsert_t.png)
+![](https://raw.githubusercontent.com/xj916ch/xj916ch.github.io/master/res/20200319listinsert_h.png)
 
 
 

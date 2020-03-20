@@ -17,7 +17,7 @@ tags: [Windows,Linux]
 
 安装时最好选择最下面的选项，这样的话在cmd中也可以使用git等命令。
 
-![image](https://github.com/xj916ch/xj916ch.github.io/raw/master/_posts/kit/pictures/windows-linux-environment-installation-tips.png)
+![](https://raw.githubusercontent.com/xj916ch/xj916ch.github.io/master/res/windows-linux-environment-installation-tips.png)
 
 
 注意：
