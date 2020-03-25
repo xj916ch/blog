@@ -99,7 +99,7 @@ $sshd & //开启sshd服务，可以加入到.bashrc中默认启动
 
 （2）juicessh
 
-先新建一个认证，![](https://raw.githubusercontent.com/xj916ch/xj916ch.github.io/master/res/20200325215000.png)
+先新建一个认证，![](https://raw.githubusercontent.com/xj916ch/xj916ch.github.io/master/res/20200325214843.png)
 
 ![](https://raw.githubusercontent.com/xj916ch/xj916ch.github.io/master/res/20200325215131.png)
 
