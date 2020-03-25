@@ -17,11 +17,9 @@ tags: [Android, Termux]
 
 [ubuntu使用SSH通过Termux登录Android设备](http://blog.csdn.net/jy1690229913/article/details/78348440)
 
-### [Termux](https://termux.com/)
+## 基本使用
 
-- 基本使用
-
-开始的一些操作只能在Termux原始的终端进行，安装zsh后再操作就较为方便。
+开始的一些操作只能在Termux原始的终端进行。
 
 VOL↑ + Q  调出软键盘
 
@@ -47,29 +45,29 @@ VOL↑ + D  右
 
 `$pkg install git clang python`
 
-- 其他
+## 其他
 
-1.启用外置存储
+1. 启用外置存储
 
 `termux-setup-storage`
 
 执行这条命令，Android6.0以上会弹框确认是否授权，成功拿到存储权限后会在家目录生成storage目录，并且生成若干目录，软连接都指向外置存储卡的相应目录
 
-2.anroid手机主机互相登录：
+2. anroid手机和主机互相登录：
 
 Termux终端中使用ssh访问远程服务器与Linux终端中使用ssh别无二致。但要使用ssh访问Android设备就不同了，Termux终端中sshd服务不支持密码验证，也就是说用户不能期望通过ssh user@server然后输入用户密码的方式从别的终端访问Android设备。Termux终端中sshd只支持密钥验证。
 
 android和服务器主机处于同一个网段网络。
 
-- 手机登录主机：
+- android登录主机：
 
 如主机ssh一样使用：
 
 比如： `$scp user@192.168.10.111:/home/user/bd.tar.gz .`
 
-- android访问主机
+- 主机访问android
 
-在Termux中启动ssh server：
+（1）在Termux中启动ssh server：
 
 `$sshd #开启ssh服务`
 
@@ -85,14 +83,30 @@ android和服务器主机处于同一个网段网络。
 
 其他设备上可通过`ssh username@ip -p port`的方式登录Android设备。
 
-- android JuiceSSH连接termux
+## android JuiceSSH连接termux
 
 juicessh的终端更好看，键盘更好用。
 
-juicessh生成认证公钥，复制到termux下的.ssh/authorized_keys中。
+步骤：
 
-termux输入sshd打开服务器。
+（1）termux
 
-juicessh就可以连接使用了。
+$whoami //查询用户名
+
+$passwd //更改密码
+
+$sshd & //开启sshd服务，可以加入到.bashrc中默认启动
+
+（2）juicessh
+
+先新建一个认证，![](https://raw.githubusercontent.com/xj916ch/xj916ch.github.io/master/res/20200325215000.png)
+
+![](https://raw.githubusercontent.com/xj916ch/xj916ch.github.io/master/res/20200325215131.png)
+
+再新建一个连接，
+
+![](https://raw.githubusercontent.com/xj916ch/xj916ch.github.io/master/res/20200325215431.png)
+
+这样juicessh就可以连接使用了。
 
 
