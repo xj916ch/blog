@@ -11,6 +11,219 @@ tags: [c]
 
 
 
+## 字符串函数实现
+
+
+
+```c
+#include <stdio.h>
+
+int mystrlen(const char *str);
+char *mystrcpy(char *dest, const char *src);
+char *mystrcat(char *dest, const char *src);
+char *mystrtok(char *str, const char *delim);
+int mystrcmp(const char *st1, const char *st2);
+
+int main()
+{
+	char *str1 = "mmyy";
+	char str2[10] = "hei";
+
+	//printf("%d\n", mystrlen(str1));
+
+	//mystrcpy(str2, str1);
+	//printf("%s\n", str2);
+	//printf("%s\n", mystrcpy(str2, str1));
+
+	//printf("%s\n", mystrcat(str2, str1));
+	
+	char s[] = "ab-cd : ef;gh :i-jkl;mnop;qrs-tu: vwx-y;z";	
+	printf("%s\n", mystrtok(s, ":"));
+	printf("%s\n", mystrtok(NULL, ":"));
+
+	//printf("%d\n", mystrcmp(str1, str2));
+}
+
+int mystrlen(const char *str)
+{
+	int i = 0;
+	while(*str++ != '\0')
+		i++;
+
+	return i;
+}
+
+char *mystrcpy(char *dest, const char *src)
+{
+	char *temp = dest;
+	while((*temp++ = *src++) != '\0')
+		;
+
+	return dest;
+}
+
+char *mystrcat(char *dest, const char *src)
+{
+	char *temp = dest;
+	while(*temp != '\0')
+		temp++;
+
+	while((*temp++ = *src++) != '\0')
+		;
+
+	return dest;
+}
+
+
+
+char *mystrtok(char *str, const char *delim)
+{
+	static char *src = NULL;
+	
+	if(str == NULL)
+		str = src;
+
+	char *temp = str;
+
+	while(*str) {
+		if (*str == *delim) {
+			*str = '\0';
+			break;
+		}
+		str++;
+	}
+
+	src = str+1;
+
+	return temp;
+}
+
+int mystrcmp(const char *st1, const char *st2)
+{
+	while(*st1) {
+		if (*st1 != *st2)
+			break;
+	}
+	return *st1-*st2;
+}
+```
+
+
+
+```c
+char *mytok(char *str_arr,const char *delimiters,char **temp_str)
+{
+	char *ptr_temp = NULL;//指向待分解的字符串
+
+	/*
+	 * 1、判断参数str_arr是否为空，如果是NULL就以传递进来的temp_str作为起始位置；
+	 * 若不是NULL，则以str为起始位置开始切分。
+	 */
+	if(str_arr == NULL)
+		str_arr = *temp_str;
+
+	printf("%d\n", strspn(str_arr,delimiters));
+	str_arr += strspn(str_arr,delimiters);//扫描delimiters字符开始的所有分解符
+	if(*str_arr == '\0') //3、判断当前待分解的位置是否为'\0'，若是则返回NULL，否则继续
+		return NULL;
+
+	ptr_temp = str_arr;
+	str_arr = strpbrk(str_arr,delimiters);
+	if(str_arr == NULL)
+		*temp_str = strchr(ptr_temp,'\0');
+	else {
+		*str_arr = '\0';
+		*temp_str = str_arr + 1;
+	}
+
+	return ptr_temp;
+}
+```
+
+
+
+比如我们要遍历字符串数组，我们的思路一般是先求字符串数组的长度，然后再用for循环便利，其实没必要这样，我们直接在
+
+字符串数组后面加上个NULL就行再去遍历
+
+```c
+int main()
+{
+	char *str[] = {"hell", "the", "cruel", "world", NULL};
+	
+
+	for(int i = 0; str[i]; i++) {
+		printf("%s\n", str[i]);
+	}
+
+}
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## 递归
+
+
+
+
+
+利用递归函数调用方式，将所输入的5个字符，以相反顺序打印出来
+
+```c
+void func(int n);
+void main()
+{
+    printf("please input 5 numbers:");
+    func(2);
+}
+void func(int n)
+{
+    if(n <= 1)
+    {
+        char next = getchar();
+        putchar(next);
+    }
+    else
+    {
+        char next = getchar();
+        func(n-1);
+        putchar(next);
+    }
+}
+```
+
+
+
 ## 最大公约数
 
 ```c
