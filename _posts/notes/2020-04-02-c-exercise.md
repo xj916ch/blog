@@ -21,7 +21,7 @@ tags: [c]
 int mystrlen(const char *str);
 char *mystrcpy(char *dest, const char *src);
 char *mystrcat(char *dest, const char *src);
-char *mystrtok(char *str, const char *delim);
+char *mystrtok(char *str, const char *delim, char **saveptr);
 int mystrcmp(const char *st1, const char *st2);
 
 int main()
@@ -36,12 +36,13 @@ int main()
 	//printf("%s\n", mystrcpy(str2, str1));
 
 	//printf("%s\n", mystrcat(str2, str1));
+    
+    //printf("%d\n", mystrcmp(str1, str2));
 	
 	char s[] = "ab-cd : ef;gh :i-jkl;mnop;qrs-tu: vwx-y;z";	
-	printf("%s\n", mystrtok(s, ":"));
-	printf("%s\n", mystrtok(NULL, ":"));
-
-	//printf("%d\n", mystrcmp(str1, str2));
+    char *saveptr;
+	printf("%s\n", mystrtok(s, ":; ", &saveptr));
+	printf("%s\n", mystrtok(NULL, ":", &saveptr));	
 }
 
 int mystrlen(const char *str)
@@ -72,30 +73,6 @@ char *mystrcat(char *dest, const char *src)
 		;
 
 	return dest;
-}
-
-
-
-char *mystrtok(char *str, const char *delim)
-{
-	static char *src = NULL;
-	
-	if(str == NULL)
-		str = src;
-
-	char *temp = str;
-
-	while(*str) {
-		if (*str == *delim) {
-			*str = '\0';
-			break;
-		}
-		str++;
-	}
-
-	src = str+1;
-
-	return temp;
 }
 
 int mystrcmp(const char *st1, const char *st2)
@@ -130,7 +107,7 @@ char *mytok(char *str_arr,const char *delimiters,char **temp_str)
 	ptr_temp = str_arr;
 	str_arr = strpbrk(str_arr,delimiters);
 	if(str_arr == NULL)
-		*temp_str = strchr(ptr_temp,'\0');
+		*temp_str = strchr(ptr_temp,'\0'); //空串
 	else {
 		*str_arr = '\0';
 		*temp_str = str_arr + 1;
@@ -195,8 +172,6 @@ int main()
 
 
 
-
-
 利用递归函数调用方式，将所输入的5个字符，以相反顺序打印出来
 
 ```c
@@ -224,7 +199,7 @@ void func(int n)
 
 
 
-## 最大公约数
+最大公约数
 
 ```c
 #include <stdio.h>
@@ -248,9 +223,11 @@ int main(int argc, char *argv[])
 
 
 
-## 汉诺塔问题
+汉诺塔问题
 
-传送门：https://www.bilibili.com/video/av9830115?share_medium=android&share_source=copy_link&bbid=8472E161-0EC9-4248-AAEE-B5ED946102C5110245infoc&ts=1585825706585
+传送门：
+
+https://www.bilibili.com/video/av9830115?share_medium=android&share_source=copy_link&bbid=8472E161-0EC9-4248-AAEE-B5ED946102C5110245infoc&ts=1585825706585
 
 ```c
 #include <stdio.h>
