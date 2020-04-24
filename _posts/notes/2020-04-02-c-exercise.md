@@ -263,7 +263,34 @@ int main()
 
 
 
+杨辉三角
 
+```c
+#include <stdio.h>
+
+int triangle(int row, int column)
+{
+    if(column == 1 || row == column)
+        return 1;
+    return (triangle(row-1, column-1)+triangle(row-1, column));
+}
+
+int main()
+{
+    printf("请输入三角形的层数:");
+    int n;
+    scanf("%d",&n);
+    for(int i=1; i<=n; i++)
+    {
+        for(int j=1; j<=i; j++)   //每层的数据个数
+        {
+
+            printf("%2d ",triangle(i,j));
+        }
+        printf("\n");
+    }
+}
+```
 
 
 
